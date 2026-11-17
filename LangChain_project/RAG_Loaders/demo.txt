@@ -1,0 +1,2 @@
+Hello, I am learning LangChain.
+This is my first TextLoader program.

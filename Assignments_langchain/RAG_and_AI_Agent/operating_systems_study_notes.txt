@@ -1,0 +1,104 @@
+OPERATING SYSTEMS STUDY NOTES Topic: Deadlocks Purpose: Sample TXT notes
+for testing a RAG (Retrieval-Augmented Generation) application.
+
+1.  What is a deadlock? A deadlock is a situation in an operating system
+    where two or more processes wait indefinitely because each process
+    is waiting for a resource held by another process in the group. As a
+    result, none of the processes can continue.
+
+Simple example: - Process P1 holds Printer A and waits for Scanner B. -
+Process P2 holds Scanner B and waits for Printer A. - P1 cannot continue
+until it gets Scanner B. - P2 cannot continue until it gets Printer A.
+Both processes wait forever, so a deadlock occurs.
+
+2.  Four necessary conditions for deadlock Deadlock can occur only when
+    all four conditions exist at the same time:
+
+-   Mutual exclusion: At least one resource cannot be shared; only one
+    process can use it at a time.
+-   Hold and wait: A process holds one or more resources while waiting
+    for additional resources.
+-   No preemption: A resource cannot be forcibly taken away; it must be
+    released voluntarily by the process holding it.
+-   Circular wait: A circular chain of processes exists, where each
+    process waits for a resource held by the next process in the chain.
+
+Remember: Breaking at least one of these four conditions can prevent
+deadlock.
+
+3.  Deadlock prevention Deadlock prevention designs the system so that
+    at least one of the four necessary conditions can never hold.
+    Examples:
+
+-   Reduce mutual exclusion where resources can safely be shared.
+-   Require processes to request all resources at once, reducing hold
+    and wait.
+-   Allow preemption for suitable resources.
+-   Impose a fixed ordering on resource requests to prevent circular
+    wait. Disadvantage: Prevention can reduce resource utilization and
+    may cause processes to wait longer.
+
+4.  Deadlock avoidance Deadlock avoidance checks each resource request
+    before granting it. The system grants a request only if the
+    resulting state is safe. A safe state is a state in which there is
+    at least one order (safe sequence) in which every process can obtain
+    its remaining resources, finish, and release resources. An unsafe
+    state is not necessarily deadlocked, but it may lead to deadlock.
+    Banker’s algorithm is a well-known deadlock-avoidance algorithm. It
+    uses each process’s maximum resource demand, its current allocation,
+    and the currently available resources.
+
+5.  Deadlock detection and recovery Detection allows deadlocks to occur
+    and checks whether one has happened. For certain resource types, a
+    wait-for graph can help detect cycles. Recovery methods include:
+
+-   Terminating all deadlocked processes.
+-   Terminating one process at a time until the cycle is broken.
+-   Preempting resources, where safe and practical. Recovery may cause
+    lost work and should consider cost and fairness.
+
+6.  Prevention vs avoidance vs detection
+
+-   Prevention: Make at least one necessary deadlock condition
+    impossible.
+-   Avoidance: Check requests and grant only those that keep the system
+    in a safe state.
+-   Detection and recovery: Allow deadlock, detect it, then take
+    corrective action.
+
+7.  Resource-allocation graph A resource-allocation graph represents
+    processes and resource types.
+
+-   A process is commonly shown as a circle.
+-   A resource type is commonly shown as a rectangle.
+-   A request edge goes from a process to a resource.
+-   An assignment edge goes from a resource to a process. A cycle
+    indicates deadlock when each resource type has only one instance.
+    With multiple instances, a cycle indicates the possibility of
+    deadlock, but it is not sufficient by itself to prove deadlock.
+
+8.  Quick revision points
+
+-   Deadlock means processes wait indefinitely for resources.
+-   The four conditions are mutual exclusion, hold and wait, no
+    preemption, and circular wait.
+-   Prevention breaks a necessary condition.
+-   Avoidance checks for a safe state before granting a request.
+-   Banker’s algorithm is used for deadlock avoidance.
+-   Detection identifies deadlock after it occurs; recovery attempts to
+    resolve it.
+
+9.  Practice questions
+10. Define deadlock and explain with a simple example.
+11. List and explain the four necessary conditions for deadlock.
+12. Differentiate deadlock prevention and deadlock avoidance.
+13. What is a safe state? How is it different from an unsafe state?
+14. Explain the purpose of Banker’s algorithm.
+15. Explain how a resource-allocation graph can help identify deadlock.
+16. Describe two methods for recovering from deadlock.
+17. A process holds a printer and waits for a scanner, while another
+    holds the scanner and waits for the printer. Identify the deadlock
+    conditions present.
+
+Note: These are sample educational notes created for your RAG
+assignment, not official course material.

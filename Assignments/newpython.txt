@@ -1,0 +1,2 @@
+python is the high level langauge
+python is oop

@@ -1,0 +1,9 @@
+
+from langchain_community.document_loaders import TextLoader
+
+loader = TextLoader("LangChain_project/RAG_Loaders/demo.txt")
+
+documents = loader.load()
+
+print(documents)
+print(documents[0].page_content)

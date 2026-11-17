@@ -1,0 +1,24 @@
+Business Research Notes
+
+Product
+
+SmartHome Hub X1 is a fictional smart-home hub. The product manual says
+it supports up to 30 compatible devices, 2.4 GHz Wi-Fi, mobile-app
+remote control, schedules and automation, 7 days of local event history,
+and basic device-disconnection alerts.
+
+Proposal
+
+The company proposal repeats the 30-device limit, mobile app, scheduled
+automation, and basic disconnection alerts. It additionally proposes a
+web dashboard for multiple properties and a 90-day cloud event-history
+option. These two additions are planned or subject to approval, not
+confirmed current features.
+
+Comparison guidance
+
+When comparing the product manual and company proposal: - Identify
+features confirmed by both documents. - Identify features mentioned only
+in the proposal. - Clearly label planned features and do not present
+them as existing capabilities. - If a detail is absent from both
+documents, say the information is not available in the documents.

@@ -1,0 +1,29 @@
+Roll No: 101
+Name: Aarav Sharma
+Age: 20
+Email: aarav@example.com
+Course: Computer Engineering
+
+Roll No: 102
+Name: Priya Patil
+Age: 21
+Email: priya@example.com
+Course: Information Technology
+
+Roll No: 103
+Name: Rahul Deshmukh
+Age: 20
+Email: rahul@example.com
+Course: Civil Engineering
+
+Roll No: 104
+Name: Sneha Kulkarni
+Age: 22
+Email: sneha@example.com
+Course: Computer Engineering
+
+Roll No: 105
+Name: Aditya Joshi
+Age: 21
+Email: aditya@example.com
+Course: Mechanical Engineering

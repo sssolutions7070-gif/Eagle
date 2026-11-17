@@ -1,0 +1,118 @@
+PYTHON NOTES
+
+1. What is Python?
+Python is a high-level, general-purpose programming language. It is known for its readable syntax and is used in web development, automation, data analysis, artificial intelligence, and many other areas.
+
+Example:
+print("Hello, World!")
+
+2. Python Lists
+A list is an ordered and changeable collection of items. Lists allow duplicate values and can store items of different data types. A list is written using square brackets [].
+
+Example:
+fruits = ["apple", "banana", "mango"]
+print(fruits[0])  # apple
+
+Important points:
+- Lists are ordered.
+- Lists are mutable, which means their items can be changed.
+- Lists allow duplicate values.
+- Indexing starts at 0.
+- append() adds an item to the end.
+- remove() removes a matching item.
+- len() returns the number of items.
+
+Example:
+numbers = [10, 20, 30]
+numbers.append(40)
+numbers[0] = 5
+print(numbers)  # [5, 20, 30, 40]
+
+3. Python Tuples
+A tuple is an ordered collection of items that cannot be changed after creation. Tuples are written using parentheses ().
+
+Example:
+colors = ("red", "green", "blue")
+print(colors[1])  # green
+
+Important points:
+- Tuples are ordered.
+- Tuples are immutable, which means their items cannot be changed after creation.
+- Tuples allow duplicate values.
+- Indexing starts at 0.
+- A tuple with one item needs a trailing comma.
+
+Example:
+single_item = ("apple",)
+
+4. Difference Between Lists and Tuples
+- Lists use square brackets, for example: [1, 2, 3].
+- Tuples use parentheses, for example: (1, 2, 3).
+- Lists are mutable; tuples are immutable.
+- Use a list when the collection needs to change.
+- Use a tuple when the collection should remain fixed.
+
+5. Python Strings
+A string is a sequence of characters enclosed in single or double quotation marks.
+
+Example:
+name = "Python"
+print(name[0])  # P
+
+Strings are immutable. Common string methods include lower(), upper(), strip(), and replace().
+
+6. Python Dictionaries
+A dictionary stores information as key-value pairs and is written using curly braces {}.
+
+Example:
+student = {"name": "Asha", "age": 20}
+print(student["name"])  # Asha
+
+Dictionaries are mutable. Keys must be unique. The get() method can retrieve a value by key.
+
+7. Python Sets
+A set is an unordered collection of unique items, written using curly braces {} or set().
+
+Example:
+numbers = {1, 2, 2, 3}
+print(numbers)  # {1, 2, 3}
+
+Sets remove duplicate values. An empty set must be created with set(), because {} creates an empty dictionary.
+
+8. Conditional Statements
+Conditional statements allow a program to make decisions using if, elif, and else.
+
+Example:
+age = 18
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+9. Loops
+Loops repeat a block of code. A for loop is commonly used to iterate over a sequence. A while loop repeats while its condition is true.
+
+Example:
+for number in [1, 2, 3]:
+    print(number)
+
+10. Python Functions
+A function is a reusable block of code defined with the def keyword. Functions can accept parameters and return a result.
+
+Example:
+def add(a, b):
+    return a + b
+
+print(add(2, 3))  # 5
+
+11. Exception Handling
+Exception handling helps a program respond to errors using try and except.
+
+Example:
+try:
+    number = int("abc")
+except ValueError:
+    print("Please enter a valid number.")
+
+12. Simple Explanation Rule
+When explaining a Python concept, use simple language, give a short definition, show a small code example, and explain the output. If the answer is not covered in these notes, say that the information is not available in the notes instead of guessing.
